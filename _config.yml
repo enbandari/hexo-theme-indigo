@@ -19,26 +19,26 @@ menu:
     text: Categories
     url: /categories
   github:
-    url: https://github.com/yscoder
+    url: https://github.com/enbandari
     target: _blank
   weibo:
     url: http://www.weibo.com/ysweb
     target: _blank
   link:
-    text: 测试
-    url: /custom
+    text: 博客
+    url: http://www.println.net
 
 rss: /atom.xml
 
 # 你的头像url
-avatar: /img/avatar.jpg
+avatar: /assets/img/Kotlin-logo.png
 # 头像背景图
 brand: /img/brand.jpg
 # favicon
-favicon: /favicon.ico
+favicon: /assets/img/favicon.ico
 
 # email
-email: 634206017@qq.com
+email: kotlin@kotliner.cn
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -63,9 +63,9 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 谢谢大爷~
-  wechat: /img/wechat.jpg     #微信，关闭设为 false
-  alipay: /img/alipay.jpg     #支付宝，关闭设为 false
+  title: Have a nice Kotlin!
+  wechat: /assets/img/wechat.jpg     #微信，关闭设为 false
+  alipay: /assets/img/alipay.jpg     #支付宝，关闭设为 false
 
 # 是否开启搜索
 search: true
@@ -116,7 +116,7 @@ uyan_uid: false
 canonical: false
 
 # 版权起始年份
-since_year: 2015
+since_year: 2017
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
 about: 用户页面中作者相关的描述性文字，如不需要设为 false
@@ -128,8 +128,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: (つェ⊂)咦!又好了!
-  leave: 死鬼去哪里了！
+  normal: Kotliner
+  leave: Kotliner
 
 # 设置为 true 发布后将使用 unpkg cdn
 cdn: true
