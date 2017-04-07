@@ -1,4 +1,4 @@
-<% if(theme.toc){ 
+<% if(theme.toc){
     var topic = toc(post.content, {
             class: 'post-toc',
             list_number: theme.toc.list_number
@@ -10,7 +10,7 @@
             <h4>TOC</h4>
             <%- toc(post.content, {
                 class: 'post-toc',
-                list_number: theme.toc.list_number
+                list_number: false//theme.toc.list_number
             }) %>
         </nav>
     </aside>
