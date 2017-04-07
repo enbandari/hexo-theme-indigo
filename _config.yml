@@ -12,21 +12,23 @@ menu:
     text: 主页
     url: /
   archives:
+    text: 所有文章
     url: /archives
   tags:
+    text: 标签
     url: /tags
   th-list:
-    text: Categories
+    text: 分类
     url: /categories
   github:
     url: https://github.com/enbandari
     target: _blank
-  weibo:
-    url: http://www.weibo.com/ysweb
-    target: _blank
-  link:
-    text: 博客
-    url: http://www.println.net
+#  weibo:
+#    url: http://www.weibo.com/ysweb
+#    target: _blank
+#  link:
+#    text: 博客
+#    url: http://www.println.net
 
 rss: /atom.xml
 
@@ -44,15 +46,15 @@ email: kotlin@kotliner.cn
 color: '#3F51B5'
 
 # 页面标题
-tags_title: Tags
-archives_title: Archives
-categories_title: Categories
+tags_title: 标签
+archives_title: 所有文章
+categories_title: 分类
 
 # 文章截断
 excerpt_render: false
 excerpt_length: 200
 excerpt_link: 阅读全文...
-mathjax: false
+mathjax: true
 archive_yearly: true
 
 # 是否显示文章最后更新时间
@@ -100,14 +102,17 @@ less:
   paths:
     - source/css/style.less
 
+
+#comments:
+#  yungentie: http://www.kotliner.cn
 # 是否开启多说评论，填写你在多说创建的站点二级域名
-duoshuo: ysblog
+# duoshuo: ysblog
 # 是否开启多说评论计数（该服务不稳定）
-duoshuo_count: false
+# duoshuo_count: false
 # 使用 disqus 时关闭多说评论
-disqus_shortname: false
+# disqus_shortname: true
 # 是否开启友言评论, 填写友言用户id
-uyan_uid: false
+uyan_uid: 2130248
 
 # 规范网址
 # 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径
