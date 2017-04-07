@@ -1,7 +1,11 @@
 <blockquote class="post-copyright">
     <div class="content">
         <%- partial('updated') %>
-        <%- _.template(theme.copyright)(locals) %>
+        <% if(page.source_url){ %>
+        <%- theme.copyright %>：<a href="<%- page.source_url %> " target="_blank" rel="external"><%- page.source_url %></a>
+        <% }else{ %>
+        <%- theme.copyright %>：<a href="<%- url_for(page.path).replace(/index\.html$/, '') %> " target="_blank" rel="external"><%- url.replace(/index\.html$/, '') %></a>
+        <% } %>
     </div>
     <footer>
         <a href="<%- config.url %>">
