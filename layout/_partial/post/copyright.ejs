@@ -8,7 +8,7 @@
         <% } %>
     </div>
     <footer>
-        <a href="<%- config.url %>">
+        <a href="/authors/<%=author_to_url(post.author)%>/">
             <img src="<%- url_for(theme.avatar) %>" alt="<%- config.author %>">
             <% if (post.author === undefined){ %>
             <%= config.author %>
