@@ -3,18 +3,29 @@
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        <%=theme.reward.title %>
+        <%=page.reward_title? page.reward_title : theme.reward.title %>
         <i class="icon icon-quote-right"></i>
     </h3>
     <ul class="reward-items">
-        <% if(theme.reward.wechat){ %>
+        <% let usePage = false; if(page.reward_wechat || page.reward_alipay){ usePage = true }%>
+        <% if(page.reward_wechat){ %>
+        <li>
+            <img src="<%- url_for(page.reward_wechat) %>" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        <% }else if(!usePage && theme.reward.wechat){ %>
         <li>
             <img src="<%- url_for(theme.reward.wechat) %>" title="微信打赏二维码" alt="微信打赏二维码">
             <p>微信</p>
         </li>
         <% } %>
 
-        <% if(theme.reward.alipay){ %>
+        <% if(page.reward_alipay){ %>
+        <li>
+            <img src="<%- url_for(page.reward_alipay) %>" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        <% }else if(!usePage && theme.reward.alipay){ %>
         <li>
             <img src="<%- url_for(theme.reward.alipay) %>" title="支付宝打赏二维码" alt="支付宝打赏二维码">
             <p>支付宝</p>

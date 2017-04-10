@@ -1,0 +1,16 @@
+<%- partial('_partial/header', {
+    title: locals.title || theme.author_title,
+    hdClass: 'author-header'
+}) %>
+<div class="container body-wrap fade">
+    <div class="waterfall">
+        <% site.authors.each(function(author){ %>
+        <div class="waterfall-item">
+            <div class="article-card archive-article">
+                <h1 class="post-card-title"><%- author.name %></h1>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    <%- partial('_partial/paginator') %>
+</div>
