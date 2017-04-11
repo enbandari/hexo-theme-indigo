@@ -1,16 +1,19 @@
 <%- partial('_partial/header', {
     title: locals.title || theme.author_title,
-    hdClass: 'author-header'
+    hdClass: 'archives-header'
 }) %>
 <div class="container body-wrap fade">
+    <%
+    const count_posts = function(author) {
+        return site.posts.filter(function(post) {
+            return post.author === author
+        }).length
+    }
+
+    site.authors.map(function(author){
+    %>
     <div class="waterfall">
-        <% list_authors(function(author){ %>
-        <div class="waterfall-item">
-            <div class="article-card archive-article">
-                <h1 class="post-card-title"><%- author.name %></h1>
-            </div>
-        </div>
-        <% }) %>
+        <%- partial('_partial/author', {href: "/authors/" + author_to_url.call(this, author) + "/", name: author, postCount: count_posts(author)}) %>
     </div>
-    <%- partial('_partial/paginator') %>
+    <% }) %>
 </div>
