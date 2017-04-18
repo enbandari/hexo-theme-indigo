@@ -5,14 +5,13 @@
     width: 100%;
     color: @textPrimaryColor;
     height: @headerH;
-    background: @primaryColor;
     -webkit-transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
     transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
     z-index: 30;
 
     &.fixed {
         box-shadow: @boxShadow;
-
+        background: @primaryColor;
         .header-title {
             visibility: visible;
         }
@@ -43,12 +42,17 @@
 }
 
 .content-header {
-    min-height: 210px;
+    min-height: 300px;
     margin-left: -240px;
     padding: 104px 16px 48px 256px;
     color: @textPrimaryColor;
-    background: @primaryColor;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    background-image: url(/img/index-page-header-bg.jpg);
+    background-position: top;
 
     .subtitle {
         padding-top: 6px;
@@ -92,6 +96,7 @@
         margin: 0;
         min-height: auto;
         padding: 72px 16px 20px;
+        background-size: 130% auto;
 
         .title {
             font-size: 24px;
