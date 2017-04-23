@@ -153,8 +153,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: Kotliner
-  leave: Kotliner
+  normal: Kotlin 博客
+  leave: Kotlin 博客
 
 # 设置为 true 发布后将使用 unpkg cdn
 cdn: false
