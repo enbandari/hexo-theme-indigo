@@ -8,13 +8,21 @@
         <% } %>
     </div>
     <footer>
-        <a href="/authors/<%=author_to_url(post.author)%>/">
-            <img src="<%- url_for(theme.avatar) %>" alt="<%- config.author %>">
-            <% if (post.author === undefined){ %>
-            <%= config.author %>
-            <% } else { %>
-            <%= post.author %>
+        <div>
+            <a href="/authors/<%=author_to_url(post.author)%>/">
+                <% if(page.translator){ %>[原]<% } %>
+                <img src="<%- url_for(theme.avatar) %>" alt="<%- config.author %>">
+                <% if (post.author === undefined){ %>
+                <%= config.author %>
+                <% } else { %>
+                <%= post.author %>
+                <% } %>
+            </a>
+            <% if(page.translator){ %>
+            <a href="<%=page.translator_url%>/">
+                [译]<%=page.translator%>
+            </a>
             <% } %>
-        </a>
+        </div>
     </footer>
 </blockquote>
