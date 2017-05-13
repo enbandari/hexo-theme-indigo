@@ -26,24 +26,33 @@ menu:
   th-list:
     text: 分类
     url: /categories
-  github:
-    url: https://github.com/enbandari
-    target: _blank
+  info:
+    text: 关于我们
+    url: /about
+  map-marker beijing:
+    text: 北京分会
+    url: /beijing/
+  map-marker chengdu:
+    text: 成都分会
+    url: /chengdu/
+#  github:
+#    url: https://github.com/enbandari
+#    target: _blank
 #  weibo:
 #    url: http://www.weibo.com/ysweb
 #    target: _blank
-  link:
-    text: 知乎
-    url: https://zhuanlan.zhihu.com/bennyhuo
-    target: _blank
-  cube:
-    text: Println
-    url: http://www.println.net
-    target: _blank
-  star:
-    text: ice1000
-    url: http://ice1000.org
-    target: _blank
+#  link:
+#    text: 知乎
+#    url: https://zhuanlan.zhihu.com/bennyhuo
+#    target: _blank
+#  cube:
+#    text: Println
+#    url: http://www.println.net
+#    target: _blank
+#  star:
+#    text: ice1000
+#    url: http://ice1000.org
+#    target: _blank
 
 
 rss: /atom.xml
@@ -144,7 +153,7 @@ canonical: http://www.kotliner.cn
 since_year: 2017
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: 我们是来自全国各地的 Kotlin 爱好者，期待你的加入！
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
