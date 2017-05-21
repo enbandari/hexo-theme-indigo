@@ -35,6 +35,9 @@ menu:
   map-marker chengdu:
     text: 成都分会
     url: /chengdu/
+  map-marker shanghai:
+    text: 上海分会
+    url: http://shanghai.kotliner.cn
 #  github:
 #    url: https://github.com/enbandari
 #    target: _blank
