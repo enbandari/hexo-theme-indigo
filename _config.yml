@@ -15,7 +15,7 @@ menu:
     text: 官网
     url: https://www.kotlincn.net
   link:
-    text: 社区
+    text: 问答版
     url: https://discuss.kotliner.cn
   archives:
     text: 所有文章
