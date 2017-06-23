@@ -14,6 +14,9 @@ menu:
   certificate:
     text: 官网
     url: https://www.kotlincn.net
+  link:
+    text: 社区
+    url: https://discuss.kotliner.cn
   archives:
     text: 所有文章
     url: /archives
@@ -43,10 +46,6 @@ menu:
 #    target: _blank
 #  weibo:
 #    url: http://www.weibo.com/ysweb
-#    target: _blank
-#  link:
-#    text: 知乎
-#    url: https://zhuanlan.zhihu.com/bennyhuo
 #    target: _blank
 #  cube:
 #    text: Println
